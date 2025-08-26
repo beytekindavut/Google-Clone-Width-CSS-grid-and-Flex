@@ -1,0 +1,358 @@
+
+:root{
+
+    --google-blue:#1a73e8;
+    --google-red:#ea4335 ;
+    --google-yellow:#fbbc04 ;
+    --google-green:#34a853 ;
+    --text-primary:#202124;
+    --text-secondary:#5f6368 ;
+    --bg-color:#ffffff;
+    --border-color:#dfe1e5;
+    --hover-color:#f8f9fe;
+    --font-family: 'Roboto', 'Arial', sans-serif;
+    --box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    --transition: all 0.3s ease;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    background: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.header{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 20px;
+
+}
+
+
+.header-link{
+    padding: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+
+
+.header-link:hover{
+    background-color: var(--hover-color);
+    text-decoration: none;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+
+.apps-icon{
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+
+.profile{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--google-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: -60px;
+}
+
+
+.logo{
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.google-logo{
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.blue{
+    color: var(--google-blue);
+}
+
+.red{
+    color: var(--google-red);
+}
+
+
+.yellow{
+    color: var(--google-yellow);
+}
+
+
+.green{
+    color: var(--google-green);
+}
+
+
+.search-container{
+    max-width: 584px;
+    width: 100%;
+    position: relative;
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    padding: 12px 16px;
+    margin-bottom: 30px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+
+.search-box:hover{
+    box-shadow: var(--box-shadow);
+    border-color: transparent;
+}
+
+
+.search-icon{
+    color: var(--text-secondary);
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+
+.search-input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+
+
+.search-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+.search-btn{
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+
+.search-btn:hover{
+    border: var(--border-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+
+}
+
+
+.language{
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+
+.language-links{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+
+}
+
+
+.language-links a{
+    color: var(--google-blue);
+}
+
+
+.country{
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 15px;
+    color: var(--text-secondary);
+    background-color: #f2f2f2;
+}
+
+
+.footer{
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 0 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 25px;
+}
+
+
+.footer-center{
+    justify-content: center;
+}
+
+
+.footer-right{
+    justify-content: flex-end;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .google-logo{
+        font-size: 73px;
+    }
+
+
+    .footer{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        gap: 10px;
+        text-align: center;
+
+    }
+
+
+    .footer-section{
+        justify-content: center;
+        padding: 6px 0;
+        border: 1px solid blue;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    
+}
+
+
+@media (max-width: 480px) {
+
+    .google-logo{
+        font-size: 55px;
+    }
+
+
+    .search-box{
+        padding: 10px  12px;
+    }
+
+    .header{
+        padding: 13px 16px;
+    }
+
+
+    .search-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .search-btn{
+        width: 150px;
+    }
+    
+}
